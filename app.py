@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Get allowed origins from environment variable or use defaults
 # Update this with your actual frontend URL
-allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'https://frontend-dzuh-nbmrf092e-khalid-ans-projects.vercel.app/').split(',')
+allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'https://frontend-dzuh.vercel.app').split(',')
 CORS(app, origins=allowed_origins, supports_credentials=True)
 
 @app.route('/')
